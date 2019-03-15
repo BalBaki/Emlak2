@@ -102,7 +102,6 @@ h1{
 
 .cardPicture{
     width:100%;
-    height:250px;
     border:2px solid black;
 }
 
@@ -232,45 +231,20 @@ h1{
 
 .yeniIlanPic{
     position:absolute;
-     top:92px; 
      font-size:24px;
-      margin-left:30%;
 }
 
 .yeniIlanBilgi{
     position:absolute; 
-    top:120px; 
     font-size:20px;
-    margin-left:27%;
 }
 
 .yeniIlanSayi{
-    position:absolute; 
-    top:143px; 
-    font-size:16px;
-    margin-left:17%;
-}
-
-.yeniIlanPic2{
     position:absolute;
-     top:92px; 
-     font-size:24px;
-      margin-left:40%;
-}
-
-.yeniIlanBilgi2{
-    position:absolute; 
-    top:120px; 
-    font-size:20px;
-    margin-left:38%;
-}
-
-.yeniIlanSayi2{
-    position:absolute; 
-    top:143px; 
     font-size:16px;
-    margin-left:34%;
 }
+
+
 
 .dropdown-menu a {
     font-size:15px;
@@ -307,4 +281,23 @@ h1{
 
 .ilanKunyeSpanRight{
     float:right;
+}
+
+.ilan a{
+    text-decoration:none;
+    color:black;
+}
+
+.ist{
+    top:38%; 
+    margin-left:31%;
+}
+.istBilgi{
+    top:49%; 
+    margin-left:26%;
+}
+
+.istSayi{
+    top:60%;
+     margin-left:17%;
 }

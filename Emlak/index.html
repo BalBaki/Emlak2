@@ -22,28 +22,28 @@
 
     <script>
 //ziplama2
-        $(document).ready(function () {
-            $('.hoplama').on({
-                mouseover: function () {
-                    $(this).css("margin-top","-5px")
-                },
-                mouseout: function () {
-                    $(this).css("margin-top", "0px")
-                }
-            })
+        //$(document).ready(function () {
+        //    $('.hoplama').on({
+        //        mouseover: function () {
+        //            $(this).css("margin-top","-5px")
+        //        },
+        //        mouseout: function () {
+        //            $(this).css("margin-top", "0px")
+        //        }
+        //    })
 
-            $('.reklam1Bgp').on({
-                mouseover: function () {
-                    $(this).css("margin-top", "-5px"),
-                    $(this).css("box-shadow", "0px 5px 20px 5px #a7a6a6;")
-                },
-                mouseout: function () {
-                    $(this).css("margin-top", "0px")
-                    $(this).css("box-shadow", "none")
-                }
-            })
+        //    $('.reklam1Bgp').on({
+        //        mouseover: function () {
+        //            $(this).css("margin-top", "-5px"),
+        //            $(this).css("box-shadow", "0px 5px 20px 5px #a7a6a6;")
+        //        },
+        //        mouseout: function () {
+        //            $(this).css("margin-top", "0px")
+        //            $(this).css("box-shadow", "none")
+        //        }
+        //    })
 
-        })
+        //})
 
     </script>
 
@@ -53,18 +53,18 @@
 <body>
 
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow" style="font-size:15px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow " style="font-size:15px;">
         <img src="house.png" alt="..." class="menuPicture">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Satılık
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item menuItem" href="#">Konut</a>
                         <a class="dropdown-item menuItem" href="#">İşyeri</a>
                         <a class="dropdown-item menuItem" href="#">Devren İşyeri</a>
@@ -73,12 +73,12 @@
                         <a class="dropdown-item menuItem" href="#">Turistik Tesis</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown" >
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kiralık
                     </a>
                     <div class="dropdown-menu" id="selectedValueDD" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item menuItem" href="#" >Konut</a>
+                        <a class="dropdown-item menuItem" href="#">Konut</a>
                         <a class="dropdown-item menuItem" href="#">İşyeri</a>
                         <a class="dropdown-item menuItem" href="#">Arsa</a>
                         <a class="dropdown-item menuItem" href="#">Turistik Tesis</a>
@@ -97,37 +97,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Emlak Ofisleri</a>
                 </li>
+               
+            </ul>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link " href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span>Karşılaştır</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#kayitOl"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Giriş Yap</a>
+                </li>
+
+                <li>
+                    <button type="button" class="btn btn-danger btn-lg btn-block mt-3 " data-toggle="modal" data-target="#kayitOl">Ücretsiz İlan</button>
+                </li>
 
             </ul>
 
 
         </div>
 
-        <form class="form-inline my-2 my-lg-0">
-            <!--<input class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit" >Ara</button>-->
-            <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-right:20px;">
-            <li>
-                <button type="button"  class="btn  btn-lg btn-block">Karsilastir</button>
-            </li>
-            <li>
-                <button type="button"  class="btn btn-lg btn-block">Giris Yap</button>
-            </li>
-            <li>
-                <button type="button"  class="btn btn-danger btn-lg btn-block">Ücretsiz İlan</button>
-            </li>-->
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true" style="padding-left:515px;"></span>Karşılaştır</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#kayitOl"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Giriş Yap</a>
-                </li>
-                <li>
-                    <button type="button" class="btn btn-danger btn-lg btn-block mt-3" data-toggle="modal" data-target="#kayitOl">Ücretsiz İlan</button>
-                </li>
-            </ul>
-        </form>
     </nav>
 
 
@@ -182,13 +170,13 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>      
 
 
     <!--Bilgi-->
-    <div class="container mt-5">
-        <div class="row pl-5">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center pl-0">
+    <div class="container mt-5 justify-content-center">
+        <div class="row justify-content-center ">
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 col-9 text-center  pl-0 pr-0 ml-0  ">
                     <div class="rapor hoplama">
                         <a href="">
                             <div class="raporResim">
@@ -202,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center ">
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 col-9 pl-0 pr-0  mt-xl-0 mt-lg-0 mt-md-5 mt-sm-5 mt-5 text-center">
                     <div class="rapor hoplama">
                         <a href="">
                             <div class="raporResim">
@@ -213,14 +201,14 @@
                                 <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
                             </div>
                         </a>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
 
 
     <!--İlan-->
-    <div class="container mt-5">
+    <!--<div class="container mt-5">
         <div class="row">
             <div class="col-md-6 p-0" >
                 <a href="#" class="reklam1Bgp" style="text-decoration:none;">
@@ -275,13 +263,13 @@
             </div>
 
         </div>
-    </div>
+    </div>-->
 
     <!--Proje Kartlar-->
     <h1 style="text-align:center; color:black;">PROJELER</h1>
     <div class="container mt-5">
         <div class="row justify-content-center" style="text-align:center;">
-            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8 col-7  mt-3  justify-content-center pl-0">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8 col-7  mt-3  justify-content-center pl-0 ">
                 <div class="card ilan">
                     <a href="#">
                         <img class="card-img-top cardPicture" src="https://www.hurriyetemlak.com/emlak-yasam/wp-content/uploads/2018/08/Kendi-Arsas%C4%B1na-Ev-Yapmak-%C4%B0steyene-%C4%B0n%C5%9Faat-Kredisi-Verilecek.jpg" alt="Card image cap">

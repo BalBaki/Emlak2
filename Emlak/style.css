@@ -301,3 +301,9 @@ h1{
     top:60%;
      margin-left:17%;
 }
+
+@media only screen and (min-width:700px){
+    .yeniIlanPic{
+       
+        }
+}

@@ -302,8 +302,15 @@ h1{
      margin-left:17%;
 }
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:992px) and (max-width:1200p){
     .yeniIlanPic{
-       
+        margin-left:35%;
+
         }
+    .yeniIlanBilgi{
+        margin-left:35%;
+    }
+    .yeniIlanSayi{
+        margin-left:25%;
+    }
 }

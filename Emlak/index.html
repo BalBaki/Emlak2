@@ -1,0 +1,869 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <!--CSS Style-->
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <!--Javascript-->
+    <script src="Assets/jquery.min.js"></script>
+    <script src="Assets/bootstrap.min.js"></script>  
+
+    <script>
+//ziplama2
+        $(document).ready(function () {
+            $('.hoplama').on({
+                mouseover: function () {
+                    $(this).css("margin-top","-5px")
+                },
+                mouseout: function () {
+                    $(this).css("margin-top", "0px")
+                }
+            })
+
+            $('.reklam1Bgp').on({
+                mouseover: function () {
+                    $(this).css("margin-top", "-5px"),
+                    $(this).css("box-shadow", "0px 5px 20px 5px #a7a6a6;")
+                },
+                mouseout: function () {
+                    $(this).css("margin-top", "0px")
+                    $(this).css("box-shadow", "none")
+                }
+            })
+
+        })
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow" style="font-size:15px;">
+        <img src="house.png" alt="..." class="menuPicture">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Satılık
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                        <a class="dropdown-item menuItem" href="#">Konut</a>
+                        <a class="dropdown-item menuItem" href="#">İşyeri</a>
+                        <a class="dropdown-item menuItem" href="#">Devren İşyeri</a>
+                        <a class="dropdown-item menuItem" href="#">Arsa</a>
+                        <a class="dropdown-item menuItem " href="#">Kat Karşılığı Arsa</a>
+                        <a class="dropdown-item menuItem" href="#">Turistik Tesis</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kiralık
+                    </a>
+                    <div class="dropdown-menu" id="selectedValueDD" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item menuItem" href="#" >Konut</a>
+                        <a class="dropdown-item menuItem" href="#">İşyeri</a>
+                        <a class="dropdown-item menuItem" href="#">Arsa</a>
+                        <a class="dropdown-item menuItem" href="#">Turistik Tesis</a>
+                        <a class="dropdown-item menuItem" href="#">Günlük Kiralık Konut</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projeler </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Emlak Haberleri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kurumsal Üyelik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Emlak Ofisleri</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <!--<input class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit" >Ara</button>-->
+            <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-right:20px;">
+            <li>
+                <button type="button"  class="btn  btn-lg btn-block">Karsilastir</button>
+            </li>
+            <li>
+                <button type="button"  class="btn btn-lg btn-block">Giris Yap</button>
+            </li>
+            <li>
+                <button type="button"  class="btn btn-danger btn-lg btn-block">Ücretsiz İlan</button>
+            </li>-->
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true" style="padding-left:515px;"></span>Karşılaştır</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#kayitOl"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Giriş Yap</a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-danger btn-lg btn-block mt-3" data-toggle="modal" data-target="#kayitOl">Ücretsiz İlan</button>
+                </li>
+            </ul>
+        </form>
+    </nav>
+
+
+    <h1>Sen o evi hayal et, gerisi Emlak!</h1>
+
+    <!--AltMenuAramalı-->
+    <div class="container" style="font-size:15px;">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs arama">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Satılık</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Kiralık</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Projeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:red;" href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span>Ayın Fırsatı</a>
+                    </li>
+                </ul>
+
+
+                <ul class="nav nav-tabs" >
+                    <li class="nav-item" >
+                        <div class="dropdown show">
+                            <a class="btn btn-primary dropdown-toggle my-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:15px;">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu " id="selectedDD" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item active" href="#">Konut</a>
+                                <a class="dropdown-item " href="#">İşyeri</a>
+                                <a class="dropdown-item " href="#">Devren İşyeri</a>
+                                <a class="dropdown-item " href="#">Arsa</a>
+                                <a class="dropdown-item " href="#">Kat Karşılığı Arsa</a>
+                                <a class="dropdown-item " href="#">Turistik Tesis</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2 my-2" type="search" placeholder="Search" style="margin-left:10px; padding-right:607px; font-size:15px; " >
+                            <button class="btn btn-success my-2 my-sm-0" type="submit" style="font-size:15px;">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary my-2 ml-2" style="font-size:15px;">HARİTADA ARA<span class="glyphicon glyphicon-search " aria-hidden="true"></span></button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Bilgi-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-2  text-center"></div>
+            <div class="col-xl-4  text-center">
+                <div class="rapor hoplama">
+                    <a href="">
+                        <div class="raporResim">
+                            <img src="https://widgets.emlakjet.com/images/planted-map-pin.png" alt="" class="raporPic" />
+                        </div>
+                        <div class="raporİcerik">
+                            <h3 style="color:#F16666;">Evimin DEĞERİ</h3>
+                            <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4  text-center">
+                <div class="rapor hoplama">
+                    <a href="">
+                        <div class="raporResim">
+                            <img src="https://widgets.emlakjet.com/images/region-report.png" alt="" class="raporPic" />
+                        </div>
+                        <div class="raporİcerik">
+                            <h3>Bölge Raporu</h3>
+                            <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-2  text-center"></div>
+        </div>
+        </div>
+
+
+    <!--İlan-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 p-0" >
+                <a href="#" class="reklam1Bgp" style="text-decoration:none;">
+                        <img src="https://cdn.vivense.com/images/img/cat_img/ev-ofis/ev-ofis.jpg" class="reklam1Bgp" style="height:100%; width:100%; opacity:0.8; position:relative;" />
+                        <div class="reklam1" >
+                            <h3 style="position:absolute;background-color: #ffaa19;font-size: 18px; padding:10px;top:-450px;">Bakinin Seçimleri</h3>
+                            <h2 style="position:absolute; height: 5%;font-size: 30px;top:-350px; left:40px;color:white;">1+1 Satılık Daireler</h2>
+                            <p style="position:absolute;font-size:20px;width:350px;left:40px;top:-300px;color:white;">Bana küçük bir ev de yeter diyenlere… Gönlünüze göre 1+1 satılık daireler Emlakjet’te!</p>
+                            <span class="btn btn-danger" style="position:absolute; top:-170px; padding:15px; font-size:18px;left:40px;">1+1 Daireleri Gör <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+            </div>
+
+            <div class="col-md-6 ">
+                <div class="row">
+                    <div class="col-md-12 pr-0 " style="height:250px;">
+                        <a href="#" class="reklam1Bgp">
+                            <img src="https://widgets.emlakjet.com/images/right-mid.png" alt="" class="reklam1Bgp" style="height:100%; width:100%;" />
+                            <div class="reklam1">
+                                <h4 style="position:absolute; top:-200px; left:50px;width: 280px;color: #263238;font-size: 29px;text-align: left;font-weight: 500;">300 Bin TL'nin Altında Daireler</h4>
+                                <p style="position:absolute; top:-135px;left:50px;width: 230px;font-size: 16px; font-weight: 300; line-height: 1.31;text-align: left; color: #64777d; margin-top: 25px;margin-bottom: 25px;">Hesabını bilene fırsat daireler...</p>
+                                <span class="btn btn-danger" style="position:absolute; top:-70px; padding:15px; font-size:13px;left:50px;">Bütçeye Uygun Daireleri Gör <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 pr-0" style="height:250px; width:285px;">
+                        <div class="col-md-6 pl-0 pr-0" style="height:250px;">
+                            <a href="#" class="reklam1Bgp">
+                                <img class="reklam1Bgp" src="https://widgets.emlakjet.com/images/right-small-1.png" alt="" style="height:100%; width:100%;" />
+                                <div class="reklam1">
+                                    <h3 style="position:absolute; bottom:170px;font-size: 19px; font-weight: 500; text-align: left;color: #263238;height:auto; width:150px;">Hayalinizdeki Müstakil Ev</h3>
+                                    <p style="position:absolute;width: 160px;font-size: 16px; font-weight: 300;text-align: left; color: #64777d;bottom:80px;left:40px;">Bahçesinde keyif yapabileceğin müstakil ev seni bekliyor!</p>
+                                    <span class="btn btn-danger" style="text-align: left; position: absolute; padding: 15px;bottom: 25px;left: 40px;font-size: 13px;">Evleri Gör<i class="fas fa-arrow-right"></i></span>
+                                </div>  
+                            </a>
+                        </div>
+                        <div class="col-md-6 pr-0" style="height:250px;">
+                            <a href="#" class="reklam1Bgp">
+                                <img src="https://widgets.emlakjet.com/images/right-small-2.png" class="reklam1Bgp" style="height:100%; width:100%;" />
+                                <div class="reklam1">
+                                    <h3 style="position:absolute; bottom:170px;font-size: 19px; font-weight: 500; text-align: left;color: #263238;height:auto; width:200px;">Öğrencilere Üniversite Yakını Kiralıklar</h3>
+                                    <p style="position:absolute;width: 160px;font-size: 16px; font-weight: 300;text-align: left; color: #64777d;bottom:80px;left:40px;">Okuldan başka bir şeyi dert etme, kafana göre evler burada!</p>
+                                    <span class="btn btn-danger" style="text-align: left; position: absolute; padding: 15px;bottom: 25px;left: 40px;font-size: 13px;">Evleri Gör<i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Proje Kartlar-->
+    <h1 style="text-align:center; color:black;">PROJELER</h1>
+    <div class="container mt-5">
+        <div class="row ml-4">
+            <div class="col-md-4">
+                <div class="card ilan" style="width: 30rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">İSTANBUL</li>
+                        <li class="list-group-item">100m2</li>
+                        <li class="list-group-item">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card ilan" style="width: 30rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">İSTANBUL</li>
+                        <li class="list-group-item">100m2</li>
+                        <li class="list-group-item">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card ilan" style="width: 30rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">İSTANBUL</li>
+                        <li class="list-group-item">100m2</li>
+                        <li class="list-group-item">100TL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <button type="button" class="btn btn-primary" style="padding:10px; font-size:13px;">Projeler Sayfasına Git</button>
+        </div>
+    </div>
+
+    <!--Sık Arananlar-->
+    <div style="background-color:bisque; padding:10px; margin-top:30px; line-height:100%;">
+        <div class="container " style="font-size:13px; line-height:120%;">
+            <div class="row text-center sikAranan pt-2">
+                <div class="col-md-2">
+                    <p style="font-weight:bold;">Sık Aranan Kelimeler&emsp;|</p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">Sahibinden Satılık Daire</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">Sahibinden Kiralık Daire</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">Satılık Daire</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">Satılık Arsa</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">Günlük Kiralık Ev</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align:center; color:black;">En Yeni İlanlar</h1>
+    <!--En Yeni İlanlar Hizalama yap-->
+    <div class="container mt-5 enYeniIlanlar">
+        <div class="row ">
+            <div class="col-md-3" style="position: relative;">  
+                <a href="#">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/istanbul.jpg" alt="Alternate Text" />
+                    <div class="yeniIlanPic">İstanbul</div>
+                    <div class="yeniIlanBilgi">Satılık daire</div>
+                    <div class="yeniIlanSayi" style="position:absolute; top:143px; font-size:16px;text-align:center;margin-left:17%;">120 000'den Fazla İlan</div>
+                </a>
+            </div>
+            <div class="col-md-3" style="position: relative;">
+                <a href="">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/aydin.jpg" alt="Alternate Text" />
+                    <div class="yeniIlanPic"  >Aydın</div>
+                    <div class="yeniIlanBilgi">Satılık daire</div>
+                    <div class="yeniIlanSayi" >13 000'den Fazla İlan</div>
+                </a>
+            </div>
+            <div class="col-md-6"style="position: relative;" >
+                <a href="#">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/antalya.jpg" alt="Alternate Text"  />
+                    <div class="yeniIlanPic2"  >Antalya</div>
+                    <div class="yeniIlanBilgi2">Satılık daire</div>
+                    <div class="yeniIlanSayi2" >11 000'den Fazla İlan</div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6" style="position: relative;">
+                <a href="#">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/izmir.jpg" alt="Alternate Text"  />
+                    <div class="yeniIlanPic2"  >İzmir</div>
+                    <div class="yeniIlanBilgi2">Satılık daire</div>
+                    <div class="yeniIlanSayi2" >10 000'den Fazla İlan</div>
+                </a>
+            </div>
+            <div class="col-md-3" style="position: relative;">
+                <a href="#">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/06ankara.jpg" style="opacity:1;" alt="Alternate Text"  />
+                    <div class="yeniIlanPic"  >Ankara</div>
+                    <div class="yeniIlanBilgi">Satılık daire</div>
+                    <div class="yeniIlanSayi" >10 000'den Fazla İlan</div>
+                </a>
+            </div>
+            <div class="col-md-3" style="position: relative;">
+                <a href="#">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/mersin.jpg" alt="Alternate Text"  />
+                    <div class="yeniIlanPic"  >Mersin</div>
+                    <div class="yeniIlanBilgi">Satılık daire</div>
+                    <div class="yeniIlanSayi" >4 000'den Fazla İlan</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Üye ol-->
+    <div class="container mt-5 ">
+        <div class="row ml-0 mr-0" style="background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png); background-position:top left; background-repeat:no-repeat; border:1px rgba(183,179,179,0.3) solid;">
+            <div class="col-md-2"></div>
+            <div class="col-md-1">
+                <img src="house.png" alt="" style="width:50px; height:100%;"/>
+            </div>
+            <div class="col-md-6 my-3 pr-0">
+                <h2>
+                    <span>Hemen ye ol,</span>
+                    senin de ilanların anasayfada yayınlansın.
+                </h2>
+            </div>
+            <div class="col-md-2 my-2 pl-0">
+                <button type="button" data-toggle="modal" data-target="#kayitOl" class="btn btn-danger p-3" style="font-size:14px;">Ücretsiz İlan Ver</button>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 style="text-align:center; color:black;">Öne Çıkan Projeler</h1>
+    <!--Öne Çıkan İlanlar-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bilgi Al-->
+    <div class="container mt-5 ">
+        <div class="row ml-0 mr-0" style="background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png); background-position:top left; background-repeat:no-repeat; border:1px rgba(183,179,179,0.3) solid;">
+            <div class="col-md-2"></div>
+            <div class="col-md-1">
+                <img src="house.png" alt="" style="width:50px; height:100%;" />
+            </div>
+            <div class="col-md-6 my-3 pr-0">
+                <h2>
+                    <span>Baki Emlak,</span>
+                    ile kazananlardan olmak ister misiniz?
+                </h2>
+            </div>
+            <div class="col-md-2 my-2 pl-0">
+                <button type="button" class="btn btn-success p-3" style="font-size:14px;">Detaylı Bilgi Alın</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Öne Çıkan İlanlar Part2-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ilan" style="width: 25rem;">
+                    <a href="#"><img class="card-img-top cardPicture" src="https://res.cloudinary.com/emlakjet/image/upload/c_crop,f_jpg,fl_clip.ignore_aspect_ratio,g_south,h_560,q_72,w_1920/v1538486989/xbrekwbl98pj5ao49zkn.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Çubuklu  Merkezde 3+1 ayrı mutfak asansörlü daire Boğaz Manzaralı</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-center" style="font-size:15px;">
+                        <li class="list-group-item"><i class="fas fa-couch"> 2+1 </i></li>
+                        <li class="list-group-item"><i class="fas fa-square"> 105 m2</i></li>
+                        <li class="list-group-item" style="font-weight:bold;">100TL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row mt-5 justify-content-center">
+            <button type="button" class="btn btn-success" style="padding:10px; font-size:13px;">Tüm Vitrin İlanları</button>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="altMenu">
+        <div class="iletisim">
+
+        </div>
+        <div class="baglanti">
+            <div>Bizi sosyal medya hesaplarımızdan takip edin.</div>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="rules">
+            <ul>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">İlan Yayınlama Kuralları</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Kullanım Koşulları</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Üyelik Sözleşmesi ve Gizlilik Politikası</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">İşlem Rehberi</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Çerez Politikası</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Kişisel Verilerin Korunması Hakkında</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <label>
+                Baki.com © 2019 Baki.com sitesinde kullanıcılar tarafından sağlanan her türlü ilan, bilgi, içerik ve görselin gerçekliği, orijinalliği, güvenilirliği ve doğruluğuna
+                ilişkin sorumluluk bu içerikleri giren kullanıcıya ait olup, emlakjet.com'un bu hususlarla ilgili herhangi bir sorumluluğu bulunmamaktadır.
+            </label>
+            <img src="https://banner2.kisspng.com/20180613/zfv/kisspng-computer-icons-letter-b-clip-art-5b21110c32d7f2.9384524815288937082083.jpg" alt="" />
+        </div>
+    </div>
+
+
+
+    <!-- Modal - Rules -->
+    <div class="modal fade" id="kurallar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog text-center" role="document">
+            <div class="modal-content" style="background:none !important;">
+                <div class="container" style="border:1px solid; background: white;">
+                    <div class="row" style="color:green; font-size:15px;">
+                        <div class="col-md-2 h-100"><a href="#" id="rule1">Kullanım Koşulları</a></div>
+                        <div class="col-md-2 h-100"><a href="#" id="rule2">Üyelik Sözleşmesi ve Gizlilik Politikası</a></div>
+                        <div class="col-md-2 h-100"><a href="#" id="rule3">İşlem Rehberi</a></div>
+                        <div class="col-md-2"><a href="#" id="rule4">Çerez Politikası</a></div>
+                        <div class="col-md-2 "><a href="#" id="rule5">Kişisel Verilerin Korunması Hakkında</a></div>
+                        <div class="col-md-2 "><a href="#" id="rule6">İlan Yayınlama Kuralları  </a></div>
+
+                    </div>
+                    <!--<hr />-->
+                    <div class="<!--row-->" style="color:green;">
+                        
+                    </div> 
+                    </div>
+                <div class="container" style="border:1px solid; background: white; font-size:15px;">
+                    <div class="row text-center " id="info1">
+                        <div class="col-md-12">
+                            1
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info2">
+                        <div class="col-md-12">
+                            2
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info3">
+                        <div class="col-md-12">
+                            3
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info4">
+                        <div class="col-md-12">
+                            4
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info5">
+                        <div class="col-md-12">
+                            5
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info6">
+                        <div class="col-md-12">
+                            6
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="kayitOl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+                                <i class="fas fa-user mr-1"></i>
+                                Giriş
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
+                                <i class="fas fa-user-plus mr-1"></i>
+                                Kayıt Ol
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panels -->
+                    <div class="tab-content" style="font-size:15px;">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10">E-mail</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Şifre</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-info">Giriş <i class="fas fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Kayıtlı Değil Misin? <a href="#" class="blue-text">Kayıt Ol</a></p>
+                                    <p>Şifremi <a href="#" class="blue-text">Unuttum?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Çıkış</button>
+                            </div>
+
+                        </div>
+                        <!--/.Panel 7-->
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">E-posta</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput13" style="display:block">Şifre</label>
+                                    <span id="sifreKalite"></span>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput14" style="display:block;">Şifre Tekrarı</label>
+                                    <div><span id="sifreEslestirme">Şifre ve Şifre Tekrarı Birbiri İle Aynı Olmalıdır!</span></div>
+                                </div>
+
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Kayıt Ol <i class="fas fa-sign-in ml-1"></i></button>
+                                </div>
+
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Kayıtlı Mısın?  <a href="#" class="blue-text">Giriş</a></p>
+                                </div>
+                                <button type="button" id="loginCikis" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Çıkış</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <button id="tikla">Baki</button>    
+
+    <script>
+        $(document).ready(function () {
+            $('#info1,#info2,#info3,#info4,#info5,#info6').addClass("gosterme");
+            $('.baglanti').children().attr('target', 'blank');
+            $('#selected').click(function () {
+                var selText = $(this).text;
+                $(this).parents('.dropdown').find('.dropdown-toggle').html(selText)
+            })
+            $('#rule1').click(function () {
+                $('#info1').removeClass("gosterme");
+                $('#info1').addClass("goster");
+                $('#info2,#info3,#info4,#info5,#info6').addClass("gosterme");
+            })
+
+            $('#rule2').click(function () {
+                $('#info2').removeClass("gosterme");
+                $('#info2').addClass("goster");
+                $('#info1,#info3,#info4,#info5,#info6').addClass("gosterme");
+            })
+
+            $('#rule3').click(function () {
+                $('#info3').removeClass("gosterme");
+                $('#info3').addClass("goster");
+                $('#info2,#info1,#info4,#info5,#info6').addClass("gosterme");
+            })
+
+            $('#rule4').click(function () {
+                $('#info4').removeClass("gosterme");
+                $('#info4').addClass("goster");
+                $('#info2,#info3,#info1,#info5,#info6').addClass("gosterme");
+            })
+
+            $('#rule5').click(function () {
+                $('#info5').removeClass("gosterme");
+                $('#info5').addClass("goster");
+                $('#info2,#info3,#info4,#info1,#info6').addClass("gosterme");
+            })
+
+            $('#rule6').click(function () {
+                $('#info6').removeClass("gosterme");
+                $('#info6').addClass("goster");
+                $('#info2,#info3,#info4,#info5,#info1').addClass("gosterme");
+            })
+
+
+
+            $('#modalLRInput14,#modalLRInput13').keyup(function () {
+                
+                if ($('#modalLRInput13').val() == "" && $('#modalLRInput14').val()=="") {
+                    $('#sifreEslestirme').css("visibility", "hidden");
+                }
+                
+                else if ($('#modalLRInput14').val() != $('#modalLRInput13').val()) {
+                    $('#sifreEslestirme').css("visibility", "visible");
+                    $('#sifreEslestirme').text("Şifreler eşleşmemektedir.");
+                    $('#sifreEslestirme').css("color", "red");
+                }
+                else {
+                    $('#sifreEslestirme').css("visibility", "visible");
+                    $('#sifreEslestirme').text("Şifreler eşleşmektedir.");
+                    $('#sifreEslestirme').css("color", "green");
+                }
+            })
+
+            $('#loginCikis').click(function () {
+                $('#sifreEslestirme').text("");
+                $('#modalLRInput14').val("");
+                $('#modalLRInput13').val("");
+                $('#modalLRInput12').val("");
+            })
+
+            //$('#modalLRInput13').keyup(function () {
+            //    var sifre = $('#modalLRInput13').val();
+            //    for (var i = 0; i < sifre.length; i++) {
+            //        if ((sifre[i]) >= "a" && sifre[i] <= "A ")
+            //            $('#sifreKalite').text("Sifre Zayif");
+            //        else {
+            //            $('#sifreKalite').text("Sifre Güclü ");
+            //        }
+
+            //    }
+            //})
+        })  
+
+    </script>
+
+   
+   
+
+
+
+
+</body>
+
+</html>

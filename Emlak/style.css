@@ -296,12 +296,24 @@ h1{
     top: 60%;
 }
 
+.sloganBtn{
+    font-size:14px;
+}
 
+.sloganPic {
+    height: 100%;
+    width: 65px;
+}
+
+
+
+/*RESPONSIVE MEDIA*/
+/*0-sm*/
 @media only screen and (max-width:576px) {
     .yeniIlanPic {
         top: 40%;
     }
-
+    
     .yeniIlanBilgi {
         top: 49%;
     }
@@ -321,24 +333,30 @@ h1{
     .yeniIlanSayi2 {
         top: 62%;
     }
+
+    .slogan h2 {
+        font-size: 13px;
+    }
+
+    .sloganBtn {
+        font-size: 10px;
+    }
 }
 
-@media only screen and (min-width:576px) and (max-width:768px   ) {
+/*sm-md*/
+@media only screen and (min-width:576px) and (max-width:768px) {
 
     .yeniIlanPic {
        color:red;
        top:40%;
-       font-size:30px;
     }
 
     .yeniIlanBilgi {
         top: 49%;
-        font-size: 26px;
     }
 
     .yeniIlanSayi {
         top: 57%;
-        font-size: 22px;
     }
 
     .yeniIlanPic2 {
@@ -356,4 +374,44 @@ h1{
         top: 61%;
         font-size: 16px;
     }
+    .slogan h2 {
+        font-size: 14px;
+        color:red;
+    }
+
+    .sloganBtn{
+        font-size:10px;
+    }
+
+    .slogan h2 {
+        font-size: 13px;
+    }
+
+
+
+
+}
+
+
+
+/*md-lg*/
+@media only screen and (min-width:768px) and (max-width:992px ) {
+
+    .slogan h2 {
+        font-size: 16px;
+    }
+
+}
+
+
+/*lg-xl*/
+@media only screen and (min-width:992px) and (max-width:1200px ) {
+
+    .slogan h2{
+        font-size:16px;
+    }
+}
+
+/*xl - ~*/
+@media only screen and (min-width:1200px) {
 }

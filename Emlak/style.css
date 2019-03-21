@@ -1,224 +1,208 @@
 ﻿.menuPicture {
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
 }
 
-.dropdown:hover>.dropdown-menu{
-    display:block;
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
-.menuItem{
-    line-height:50px;
+.menuItem {
+    line-height: 50px;
 }
 
-.menuItem:hover{
-    text-decoration:underline;
-    border-left:2px solid green;
-    color:green;
-    
+    .menuItem:hover {
+        text-decoration: underline;
+        border-left: 2px solid green;
+        color: green;
+    }
+
+body {
+    background-image: url(https://lh3.googleusercontent.com/VrPzQ6Z3XK7oDcKn51AbKRAs_4U1wybryBOX62YhXXo3hVQLK9fujO_NtZ2hqUDs8e6KYicmew=w640-h400-e365);
+    background-size: cover;
 }
 
-body{
-    background-image:url(https://lh3.googleusercontent.com/VrPzQ6Z3XK7oDcKn51AbKRAs_4U1wybryBOX62YhXXo3hVQLK9fujO_NtZ2hqUDs8e6KYicmew=w640-h400-e365);
-    background-size:cover;
-   
+a {
+    text-decoration: none !important;
 }
 
-h1{
-    color:white;
-    text-align:center;
-    margin-top:50px;
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.ul2{
-    text-align:center !important;
+.ul2 {
+    text-align: center !important;
 }
 
-.arama li:active{
-
+.arama li:active {
 }
 
 
-.raporGenelCerceve{
-    margin-top:2%;
+.raporGenelCerceve {
+    margin-top: 2%;
 }
 
-.raporİcerik{
-    width:300px;
-    height:auto;
-    margin-top:30px;  
-    padding-top:1%;
-    border:solid 3px white;
-    border-radius:25px;
-    background-color:white;
-
+.raporİcerik {
+    height: auto;
+    margin-top: 30px;
+    padding-top: 1%;
+    border: solid 3px white;
+    border-radius: 25px;
+    background-color: white;
 }
 
-.raporİcerik h3{
-    margin-top:6.5%;
+    .raporİcerik h3 {
+        margin-top: 6.5%;
+
+    }
+
+    .raporİcerik h4 {
+        color: black;
+    }
+
+.raporPic {
+    width: 70px;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: -45px;
+    position: absolute;
 }
 
-.raporİcerik h4{
-    color:black;
+.rapor {
+    display: inline-block;
+    text-align: center;
+    margin-left: 3.5%;
 }
 
-.raporPic{
-    width:70px;
-    height:70px;
-    margin-left:-40px;
-    margin-top:-45px;  
-    position:absolute;
-
-}
-
-.rapor{
-    display:inline-block;
-    text-align:center;
-    margin-left:3.5%;
-    
-}
-
-.rapor a{
-    text-decoration:none;
-}
+    .rapor a {
+        text-decoration: none;
+    }
 
 .raporİcerik:hover {
     box-shadow: 0px 5px 20px 5px #a7a6a6;
 }
+
 .card:hover {
     box-shadow: 0px 5px 20px 5px #a7a6a6;
 }
-/*.reklam1Bgp:hover {
-    box-shadow: 0px 5px 20px 5px gray;*/
+
+.reklam1 img:hover {
+    box-shadow: 0px 5px 20px 5px gray;
 }
 
-.reklam1Bgp{
-    border-radius:1%;
+.reklam3 img:hover {
+    box-shadow: 0px 5px 20px 5px gray;
 }
 
-.reklam1Bgp img{
-    opacity:1;
-}
-
-.cardPicture{
-    width:100%;
-    height:220px;
-    border:2px solid black;
-}
-
-.reklam1{
-    position:relative;
-}
-
-.reklam1 h4{
-    position:absolute; 
-
- 
-}
-
-
-.reklam1 h3{
-    color: #f3eded;
-    margin-left:40px;   
-}
-
- .altMenu{
-            margin-bottom:0;
-            width:100%;
-            text-align:center;
-            background-color:#3A4A50;
-            margin-top:10%;
-        }
-            
-        .altMenu a{
-            text-decoration:none;
-            color:white;
-            margin-left:10px;
-        }
-
-        .copyright{
-            font-size:12px;
-            background-color : white;
-            font-family:Arial;
-        }
-        .copyright label{
-            position:absolute;
-            left:0;
-            padding:7% 27% 0 27%;
-        }
-        .copyright img{
-            width:200px;
-            height:200px;
-            opacity:0.1;
-            
-        }
-        .baglanti{
-            margin-bottom:3px;
-            background-color:#77B7DB;
-            background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png),url(https://s-emlakjet.mncdn.com/static/img/right-house.png);
-            background-repeat: no-repeat;
-            background-position:top left,top right;  
-        }
-    
-        .rules ul{
-            list-style-type:none;
-            margin:0;
-            padding:0;
-            padding-bottom:5px;
-        }
-
-        .rules ul li{
-            position:relative;
-            display:inline-block;
-            padding-right:5px;
-            color:#C2F3D9;
-        }
-         .rules ul li a{
-             font-size:13px;
-         }
-        
-         .rules ul li:hover{
-             color:#16C349;
-         }
-
-    .iletisim{
-        color:white;
-    }
-
-    .card:hover{
-        box-shadow: 0px 5px 20px 5px gray ;
-    }
-
-.enYeniIlanlar a{
-    text-decoration:none;
-    color:white;
-
-}
-
-.enYeniIlanlar a img {
+.cardPicture {
     width: 100%;
-    height: 100%;
+    height: 220px;
+    border: 2px solid black;
 }
 
-.enYeniIlanlar a:hover{
-    opacity:0.7;
+
+
+.altMenu {
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3A4A50;
+    margin-top: 10%;
 }
+
+    .altMenu a {
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+    }
+
+.copyright {
+    font-size: 12px;
+    background-color: white;
+    font-family: Arial;
+}
+
+    .copyright label {
+        position: absolute;
+        left: 0;
+        padding: 7% 27% 0 27%;
+    }
+
+    .copyright img {
+        width: 200px;
+        height: 200px;
+        opacity: 0.1;
+    }
+
+.baglanti {
+    margin-bottom: 3px;
+    background-color: #77B7DB;
+    background-image: url(https://s-emlakjet.mncdn.com/static/img/left-house.png),url(https://s-emlakjet.mncdn.com/static/img/right-house.png);
+    background-repeat: no-repeat;
+    background-position: top left,top right;
+}
+
+.rules ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+    .rules ul li {
+        position: relative;
+        display: inline-block;
+        padding-right: 5px;
+        color: #C2F3D9;
+    }
+
+        .rules ul li a {
+            font-size: 13px;
+        }
+
+        .rules ul li:hover {
+            color: #16C349;
+        }
+
+.iletisim {
+    color: white;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 20px 5px gray;
+}
+
+.enYeniIlanlar a {
+    text-decoration: none;
+    color: white;
+}
+
+    .enYeniIlanlar a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .enYeniIlanlar a:hover {
+        opacity: 0.7;
+    }
 
 .sikAranan a {
     text-decoration: none;
     color: black;
 }
 
-.sikAranan a:hover{
-    color:white;
-}
+    .sikAranan a:hover {
+        color: white;
+    }
 
 .goster {
     display: block;
 }
 
-.gosterme{
-    display:none;
+.gosterme {
+    display: none;
 }
 
 #rule1, #rule2, #rule3, #rule4, #rule5, #rule6 {
@@ -227,52 +211,53 @@ h1{
 }
 
 .modelRules a {
-    line-height:50px;
+    line-height: 50px;
 }
 
 
 
 
 .dropdown-menu a {
-    font-size:15px;
+    font-size: 15px;
 }
 
-#kayitOl a{
-    font-size:15px;
-}
-#kayitOl input{
-    font-size:15px;
+#kayitOl a {
+    font-size: 15px;
 }
 
-#kayitOl button{
-   font-size:15px;
+#kayitOl input {
+    font-size: 15px;
 }
 
-.ilan{
-    font-size:15px;
+#kayitOl button {
+    font-size: 15px;
+}
+
+.ilan {
+    font-size: 15px;
 }
 
 .ilanDetayPic {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
-.ilanKunyeDiv{
-    border-bottom:1px solid;
-    margin-bottom:4px;
+.ilanKunyeDiv {
+    border-bottom: 1px solid;
+    margin-bottom: 4px;
 }
 
-.ilanKunyeSpanLeft{
-    left:0;
+.ilanKunyeSpanLeft {
+    left: 0;
 }
 
-.ilanKunyeSpanRight{
-    float:right;
+.ilanKunyeSpanRight {
+    float: right;
 }
 
-.ilan a{
-    text-decoration:none;
-    color:black;
+.ilan a {
+    text-decoration: none;
+    color: black;
 }
 
 .yeniIlanPic {
@@ -296,8 +281,8 @@ h1{
     top: 60%;
 }
 
-.sloganBtn{
-    font-size:14px;
+.sloganBtn {
+    font-size: 14px;
 }
 
 .sloganPic {
@@ -306,100 +291,384 @@ h1{
 }
 
 
+.reklam1 img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 1%;
+}
 
-/*RESPONSIVE MEDIA*/    
+.reklam1 h3 {
+    position: absolute;
+    background-color: #ffaa19;
+    font-size: 23px;
+    padding: 10px;
+    top: 15%;
+    left: 10%;
+    color: #f3eded;
+    border-radius: 3%;
+}
 
+.reklam1 h2 {
+    position: absolute;
+    font-size: 45px;
+    left: 10%;
+    top: 25%;
+    color: #f3eded;
+    max-width: 100px;
+}
 
+.reklam1 p {
+    position: absolute;
+    font-size: 28px;
+    left: 10%;
+    color: #f3eded;
+    top: 50%;
+    max-width: 350px;
+}
 
-    /*0-sm*/
-    @media only screen and (max-width:576px) {
-        .yeniIlanPic {
-            top: 40%;
-        }
+.reklam1 span {
+    position: absolute;
+    padding: 15px;
+    font-size: 18px;
+    left: 10%;
+    top: 80%;
+}
 
-        .yeniIlanBilgi {
-            top: 49%;
-        }
+.reklam3 img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 1%;
+}
 
-        .yeniIlanSayi {
-            top: 58%;
-        }
+.reklam3 h4 {
+    position: absolute;
+    width: 280px;
+    color: black;
+    font-size: 29px;
+    text-align: left;
+    font-weight: 500;
+    top: 21%;
+    left: 8%;
+}
 
-        .yeniIlanPic2 {
-            top: 27%;
-        }
+.reklam3 p {
+    position: absolute;
+    max-width: 230px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    top: 45%;
+    left: 8%;
+    color: black;
+}
 
-        .yeniIlanBilgi2 {
-            top: 45%;
-        }
+.reklam3 span {
+    position: absolute;
+    padding: 15px;
+    font-size: 13px;
+    top: 58%;
+    left: 8%;
+}
 
-        .yeniIlanSayi2 {
-            top: 62%;
-        }
+.reklam4 h3 {
+    position: absolute;
+    font-size: 19px;
+    font-weight: 500;
+    color: #263238;
+    max-width: 200px;
+    text-align: left;
+    left:8%;
+    top:22%;
+}
 
-        .slogan h2 {
-            font-size: 15px;
-        }
+.reklam4 p {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: black;
+    top: 39%;
+    max-width: 215px;
+    left: 8%;
+}
 
-        .sloganBtn {
-            font-size: 11px;
-        }
+.reklam4 span {
+    text-align: left;
+    position: absolute;
+    padding: 15px;
+    font-size: 13px;
+    left: 8%;
+    top:59%;
+}
+
+/*RESPONSIVE MEDIA*/
+/*0-sm*/
+@media only screen and (max-width:576px) {
+    .yeniIlanPic {
+        top: 40%;
     }
 
-    /*sm-md*/
-    @media only screen and (min-width:576px) and (max-width:768px) {
+    .yeniIlanBilgi {
+        top: 49%;
+    }
 
-        .yeniIlanPic {
-            color: red;
-            top: 40%;
-        }
+    .yeniIlanSayi {
+        top: 58%;
+    }
 
-        .yeniIlanBilgi {
-            top: 49%;
-        }
+    .yeniIlanPic2 {
+        top: 27%;
+    }
 
-        .yeniIlanSayi {
-            top: 57%;
-        }
+    .yeniIlanBilgi2 {
+        top: 45%;
+    }
 
-        .yeniIlanPic2 {
-            top: 30%;
-            color: red;
-            font-size: 24px;
-        }
+    .yeniIlanSayi2 {
+        top: 62%;
+    }
 
-        .yeniIlanBilgi2 {
-            top: 46%;
-            font-size: 20px;
-        }
+    .slogan h2 {
+        font-size: 15px;
+    }
 
-        .yeniIlanSayi2 {
-            top: 61%;
-            font-size: 16px;
-        }
+    .sloganBtn {
+        font-size: 11px;
+    }
 
-        .slogan h2 {
-            font-size: 17px;
-            color: red;
-        }
+    .reklam1 h3 {
+        font-size: 20px;
+        color: red;
+    }
 
-        .sloganBtn {
-            font-size: 13px;
-        }
+    .reklam1 h2 {
+        font-size: 30px;
+    }
+
+    .reklam1 p {
+        font-size: 20px;
+        top: 52%;
+    }
+
+    .reklam1 span {
+        top: 75%;
+    }
+
+    .reklam3 h4 {
+        font-size: 25px;
+        top: 18%;
+        max-width: 200px;
+    }
+
+    .reklam3 p {
+        top: 45%;
+        max-width: 300px;
+    }
+        
+    .reklam3 span {
+        font-size: 13px;
+        top: 57%;
     }
 
 
-
-    /*md-lg*/
-    @media only screen and (min-width:768px) and (max-width:992px ) {
+    .reklam4 h3 {
+        font-size: 26px;
+        max-width: 350px;
+       left:10%;
     }
 
+    .reklam4 p {
+        font-size: 23px;
+        max-width: 350px;
+        left: 10%;
+    }
 
-    /*lg-xl*/
-    @media only screen and (min-width:992px) and (max-width:1200px ) {
+    .reklam4 span {
+        font-size: 18px;
+        top: 63%;
+        left: 10%;
+    }
+   
+}
+
+/*sm-md*/
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+    .yeniIlanPic {
+        color: red;
+        top: 40%;
+    }
+
+    .yeniIlanBilgi {
+        top: 49%;
+    }
+
+    .yeniIlanSayi {
+        top: 57%;
+    }
+
+    .yeniIlanPic2 {
+        top: 30%;
+        color: red;
+        font-size: 24px;
+    }
+
+    .yeniIlanBilgi2 {
+        top: 46%;
+        font-size: 20px;
+    }
+
+    .yeniIlanSayi2 {
+        top: 61%;
+        font-size: 16px;
+    }
+
+    .slogan h2 {
+        font-size: 17px;
+        color: red;
+    }
+
+    .sloganBtn {
+        font-size: 13px;
+    }
+
+    .reklam1 h3 {
+        font-size: 20px;
+        color: red;
+    }
+
+    .reklam1 h2 {
+        font-size: 37px;
+    }
+
+    .reklam1 p {
+        font-size: 23px;
+    }
+
+    .reklam1 span {
+        top: 73%;
+    }
+
+    .reklam4 h3 {
+        font-size: 32px;
+        max-width: 450px;
+        left:10%;
+    }
+
+    .reklam4 p {
+        font-size: 29px;
+        max-width: 450px;
+        left: 10%;
+    }
+
+    .reklam4 span {
+        font-size: 26px;
+        top: 63%;
+        left: 10%;
+    }
+}
+
+/*md-lg*/
+@media only screen and (min-width:768px) and (max-width:992px ) {
+    .reklam1 h3 {
+        font-size: 23px;
+        color: red;
+    }
+
+    .reklam1 h2 {
+        font-size: 42px;
+    }
+
+    .reklam1 p {
+        font-size: 27px;
+    }
+
+    .reklam1 span {
+        top: 78%;
+    }
+
+    .reklam3 h4 {
+     
+        font-size: 29px;
+        top: 25%;
+    }
+
+    .reklam3 p {
+        font-size: 20px;
+        top: 43%;
+        max-width:300px;
+    }
+
+    .reklam3 span {
+        font-size: 17px;
+        top: 55%;
+    }
+
+    .reklam4 h3 {
+        font-size: 22px;
+        max-width: 250px;
+        left:10%;
+    }
+
+    .reklam4 p {
+        font-size: 19px;
+        max-width: 300px;
+        left: 10%;
+    }
+
+    .reklam4 span {
+        font-size: 16px;
+        left: 10%;
+    }
+   
+    
+}
 
 
 
-        /*xl - ~*/
-        @media only screen and (min-width:1200px) {
-        }
+/*lg-xl*/
+@media only screen and (min-width:992px) and (max-width:1200px ) {
+    .reklam1 h3 {
+        font-size: 20px;
+        color: red;
+    }
+
+    .reklam1 h2 {
+        font-size: 37px;
+    }
+
+    .reklam1 p {
+        font-size: 23px;
+    }
+
+    .reklam1 span {
+        top: 73%;
+    }
+
+    .reklam3 p {
+        top: 46%;
+    }
+
+    .reklam3 span {
+        top: 60%;
+    }
+
+    .reklam4 h3 {
+        font-size: 17px;
+        max-width:190px;
+    }
+
+    .reklam4 p {
+        font-size: 14px;
+    }
+    .reklam4 span {
+        font-size: 11px;
+    }
+
+}
+
+/*xl - ~*/
+@media only screen and (min-width:1200px) {
+}

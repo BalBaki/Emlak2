@@ -302,116 +302,104 @@ h1{
 
 .sloganPic {
     height: 100%;
-    width: 65px;
+    width: 60px;
 }
 
 
 
-/*RESPONSIVE MEDIA*/
-/*0-sm*/
-@media only screen and (max-width:576px) {
-    .yeniIlanPic {
-        top: 40%;
-    }
-    
-    .yeniIlanBilgi {
-        top: 49%;
-    }
+/*RESPONSIVE MEDIA*/    
 
-    .yeniIlanSayi {
-        top: 58%;
-    }
 
-    .yeniIlanPic2 {
-        top:27%;
-    }
 
-    .yeniIlanBilgi2 {
-        top: 45%;
-    }
+    /*0-sm*/
+    @media only screen and (max-width:576px) {
+        .yeniIlanPic {
+            top: 40%;
+        }
 
-    .yeniIlanSayi2 {
-        top: 62%;
-    }
+        .yeniIlanBilgi {
+            top: 49%;
+        }
 
-    .slogan h2 {
-        font-size: 13px;
-    }
+        .yeniIlanSayi {
+            top: 58%;
+        }
 
-    .sloganBtn {
-        font-size: 10px;
-    }
-}
+        .yeniIlanPic2 {
+            top: 27%;
+        }
 
-/*sm-md*/
-@media only screen and (min-width:576px) and (max-width:768px) {
+        .yeniIlanBilgi2 {
+            top: 45%;
+        }
 
-    .yeniIlanPic {
-       color:red;
-       top:40%;
+        .yeniIlanSayi2 {
+            top: 62%;
+        }
+
+        .slogan h2 {
+            font-size: 15px;
+        }
+
+        .sloganBtn {
+            font-size: 11px;
+        }
     }
 
-    .yeniIlanBilgi {
-        top: 49%;
+    /*sm-md*/
+    @media only screen and (min-width:576px) and (max-width:768px) {
+
+        .yeniIlanPic {
+            color: red;
+            top: 40%;
+        }
+
+        .yeniIlanBilgi {
+            top: 49%;
+        }
+
+        .yeniIlanSayi {
+            top: 57%;
+        }
+
+        .yeniIlanPic2 {
+            top: 30%;
+            color: red;
+            font-size: 24px;
+        }
+
+        .yeniIlanBilgi2 {
+            top: 46%;
+            font-size: 20px;
+        }
+
+        .yeniIlanSayi2 {
+            top: 61%;
+            font-size: 16px;
+        }
+
+        .slogan h2 {
+            font-size: 17px;
+            color: red;
+        }
+
+        .sloganBtn {
+            font-size: 13px;
+        }
     }
 
-    .yeniIlanSayi {
-        top: 57%;
-    }
 
-    .yeniIlanPic2 {
-        top: 30%;
-        color: red;
-        font-size: 24px;
-    }
 
-    .yeniIlanBilgi2 {
-        top: 46%;
-        font-size:20px;
-    }
-
-    .yeniIlanSayi2 {
-        top: 61%;
-        font-size: 16px;
-    }
-    .slogan h2 {
-        font-size: 14px;
-        color:red;
-    }
-
-    .sloganBtn{
-        font-size:10px;
-    }
-
-    .slogan h2 {
-        font-size: 13px;
+    /*md-lg*/
+    @media only screen and (min-width:768px) and (max-width:992px ) {
     }
 
 
+    /*lg-xl*/
+    @media only screen and (min-width:992px) and (max-width:1200px ) {
 
 
-}
 
-
-
-/*md-lg*/
-@media only screen and (min-width:768px) and (max-width:992px ) {
-
-    .slogan h2 {
-        font-size: 16px;
-    }
-
-}
-
-
-/*lg-xl*/
-@media only screen and (min-width:992px) and (max-width:1200px ) {
-
-    .slogan h2{
-        font-size:16px;
-    }
-}
-
-/*xl - ~*/
-@media only screen and (min-width:1200px) {
-}
+        /*xl - ~*/
+        @media only screen and (min-width:1200px) {
+        }

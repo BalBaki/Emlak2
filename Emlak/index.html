@@ -53,13 +53,77 @@
 <body>
 
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow " style="font-size:15px;">
-        <img src="house.png" alt="..." class="menuPicture">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow p-0" style="font-size:15px;">
+        <div class="container">
+            <a href="#" class="navbar-brand pl-2 pt-0 pr-0">
+                <img src="house.png" alt="..." style="width:50px; ">
+            </a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pr-0" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100   ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Satılık
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menuItem" href="#">Konut</a>
+                            <a class="dropdown-item menuItem" href="#">İşyeri</a>
+                            <a class="dropdown-item menuItem" href="#">Devren İşyeri</a>
+                            <a class="dropdown-item menuItem" href="#">Arsa</a>
+                            <a class="dropdown-item menuItem " href="#">Kat Karşılığı Arsa</a>
+                            <a class="dropdown-item menuItem" href="#">Turistik Tesis</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kiralık
+                        </a>
+                        <div class="dropdown-menu" id="selectedValueDD" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menuItem" href="#">Konut</a>
+                            <a class="dropdown-item menuItem" href="#">İşyeri</a>
+                            <a class="dropdown-item menuItem" href="#">Arsa</a>
+                            <a class="dropdown-item menuItem" href="#">Turistik Tesis</a>
+                            <a class="dropdown-item menuItem" href="#">Günlük Kiralık Konut</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projeler </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Emlak Haberleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kurumsal Üyelik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Emlak Ofisleri</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span>Karşılaştır</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#kayitOl"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Giriş Yap</a>
+                    </li>
+
+                    <li>
+                        <button type="button" class="btn btn-danger btn-lg btn-block mt-3 " data-toggle="modal" data-target="#kayitOl">Ücretsiz İlan</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size:15px;">
+        <a href="#" class="navbar-brand pl-2 pt-0 pr-0">
+            <img src="house.png" alt="..." style="width:50px; ">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+        <div class="navbar-collapse collapse" id="navbar10">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-50">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Satılık
@@ -97,9 +161,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Emlak Ofisleri</a>
                 </li>
-               
             </ul>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-auto">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-auto nav-fill w-25">
                 <li class="nav-item ">
                     <a class="nav-link " href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span>Karşılaştır</a>
                 </li>
@@ -110,13 +173,13 @@
                 <li>
                     <button type="button" class="btn btn-danger btn-lg btn-block mt-3 " data-toggle="modal" data-target="#kayitOl">Ücretsiz İlan</button>
                 </li>
-
             </ul>
-
-
         </div>
 
     </nav>
+
+
+
 
 
     <h1>Sen o evi hayal et, gerisi Emlak!</h1>
@@ -141,8 +204,8 @@
                 </ul>
 
 
-                <ul class="nav nav-tabs" >
-                    <li class="nav-item" >
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
                         <div class="dropdown show">
                             <a class="btn btn-primary dropdown-toggle my-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:15px;">
                                 Dropdown
@@ -159,7 +222,7 @@
                     </li>
                     <li class="nav-item">
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2 my-2" type="search" placeholder="Search" style="margin-left:10px; padding-right:607px; font-size:15px; " >
+                            <input class="form-control mr-sm-2 my-2" type="search" placeholder="Search" style="margin-left:10px; padding-right:607px; font-size:15px; ">
                             <button class="btn btn-success my-2 my-sm-0" type="submit" style="font-size:15px;">Search</button>
                         </form>
                     </li>
@@ -170,60 +233,60 @@
                 </ul>
             </div>
         </div>
-    </div>      
+    </div>
 
 
     <!--Bilgi-->
     <div class="container mt-5 justify-content-center">
         <div class="row justify-content-center ">
-                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 col-9 text-center  pl-0 pr-0 ml-0  ">
-                    <div class="rapor hoplama">
-                        <a href="">
-                            <div class="raporResim">
-                                <img src="https://widgets.emlakjet.com/images/planted-map-pin.png" alt="" class="raporPic" />
-                            </div>
-                            <div class="raporİcerik">
-                                <h3 style="color:#F16666;">Evimin DEĞERİ</h3>
-                                <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 col-9 text-center  pl-0 pr-0 ml-0  ">
+                <div class="rapor hoplama">
+                    <a href="">
+                        <div class="raporResim">
+                            <img src="https://widgets.emlakjet.com/images/planted-map-pin.png" alt="" class="raporPic" />
+                        </div>
+                        <div class="raporİcerik">
+                            <h3 style="color:#F16666;">Evimin DEĞERİ</h3>
+                            <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
+                        </div>
+                    </a>
                 </div>
+            </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 col-9 pl-0 pr-0  mt-xl-0 mt-lg-0 mt-md-5 mt-sm-5 mt-5 text-center">
-                    <div class="rapor hoplama">
-                        <a href="">
-                            <div class="raporResim">
-                                <img src="https://widgets.emlakjet.com/images/region-report.png" alt="" class="raporPic" />
-                            </div>
-                            <div class="raporİcerik">
-                                <h3>Bölge Raporu</h3>
-                                <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
-                            </div>
-                        </a>
-                    </div>  
+            <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 col-9 pl-0 pr-0  mt-xl-0 mt-lg-0 mt-md-5 mt-sm-5 mt-5 text-center">
+                <div class="rapor hoplama">
+                    <a href="">
+                        <div class="raporResim">
+                            <img src="https://widgets.emlakjet.com/images/region-report.png" alt="" class="raporPic" />
+                        </div>
+                        <div class="raporİcerik">
+                            <h3>Bölge Raporu</h3>
+                            <h4>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
 
     <!--İlan-->
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11 pl-0"  >
+            <div class="col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11 pl-0">
                 <a href="#" class="reklam1Bgp" style="text-decoration:none;">
-                        <img src="https://cdn.vivense.com/images/img/cat_img/ev-ofis/ev-ofis.jpg" class="reklam1Bgp" style="height:100%; width:100%; opacity:0.8; position:relative;" />
-                        <!--<div class="reklam1" >
-                            <h3 style="position:absolute;background-color: #ffaa19;font-size: 18px; padding:10px;top:-450px;">Bakinin Seçimleri</h3>
-                            <h2 style="position:absolute; height: 5%;font-size: 30px;top:-350px; left:40px;color:white;">1+1 Satılık Daireler</h2>
-                            <p style="position:absolute;font-size:20px;width:350px;left:40px;top:-300px;color:white;">Bana küçük bir ev de yeter diyenlere… Gönlünüze göre 1+1 satılık daireler Emlakjet’te!</p>
-                            <span class="btn btn-danger" style="position:absolute; top:-170px; padding:15px; font-size:18px;left:40px;">1+1 Daireleri Gör <i class="fas fa-arrow-right"></i></span>
-                        </div>-->
-                    </a>
+                    <img src="https://cdn.vivense.com/images/img/cat_img/ev-ofis/ev-ofis.jpg" class="reklam1Bgp" style="height:100%; width:100%; opacity:0.8; position:relative;" />
+                    <!--<div class="reklam1" >
+                        <h3 style="position:absolute;background-color: #ffaa19;font-size: 18px; padding:10px;top:-450px;">Bakinin Seçimleri</h3>
+                        <h2 style="position:absolute; height: 5%;font-size: 30px;top:-350px; left:40px;color:white;">1+1 Satılık Daireler</h2>
+                        <p style="position:absolute;font-size:20px;width:350px;left:40px;top:-300px;color:white;">Bana küçük bir ev de yeter diyenlere… Gönlünüze göre 1+1 satılık daireler Emlakjet’te!</p>
+                        <span class="btn btn-danger" style="position:absolute; top:-170px; padding:15px; font-size:18px;left:40px;">1+1 Daireleri Gör <i class="fas fa-arrow-right"></i></span>
+                    </div>-->
+                </a>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-11 col-11 mt-4 mt-xl-0 mt-lg-0 pl">
-                <div class="row"> 
+                <div class="row">
                     <div class="col-md-12  pl-0">
                         <a href="#" class="reklam1Bgp">
                             <img src="https://widgets.emlakjet.com/images/right-mid.png" alt="" class="reklam1Bgp" style="height:100%; width:100%;" />
@@ -236,26 +299,26 @@
                     </div>
                 </div>
                 <div class="row mt-4 justify-content-center">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0" >
-                            <a href="#" class="reklam1Bgp">
-                                <img class="reklam1Bgp" src="https://widgets.emlakjet.com/images/right-small-1.png" alt="" style="height:100%; width:100%;" />
-                                <!--div class="reklam1">
-                                    <h3 style="position:absolute; bottom:170px;font-size: 19px; font-weight: 500; text-align: left;color: #263238;height:auto; width:150px;">Hayalinizdeki Müstakil Ev</h3>
-                                    <p style="position:absolute;width: 160px;font-size: 16px; font-weight: 300;text-align: left; color: #64777d;bottom:80px;left:40px;">Bahçesinde keyif yapabileceğin müstakil ev seni bekliyor!</p>
-                                    <span class="btn btn-danger" style="text-align: left; position: absolute; padding: 15px;bottom: 25px;left: 40px;font-size: 13px;">Evleri Gör<i class="fas fa-arrow-right"></i></span>
-                                </div>-->  
-                            </a>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
-                            <a href="#" class="reklam1Bgp">
-                                <img src="https://widgets.emlakjet.com/images/right-small-2.png" class="reklam1Bgp" style="height:100%; width:100%;" />
-                                <div class="reklam1">
-                                    <h3 style="position:absolute; bottom:170px;font-size: 19px; font-weight: 500; text-align: left;color: #263238;height:auto; width:200px;">Öğrencilere Üniversite Yakını Kiralıklar</h3>
-                                    <p style="position:absolute;width: 160px;font-size: 16px; font-weight: 300;text-align: left; color: #64777d;bottom:80px;left:40px;">Okuldan başka bir şeyi dert etme, kafana göre evler burada!</p>
-                                    <span class="btn btn-danger" style="text-align: left; position: absolute; padding: 15px;bottom: 25px;left: 40px;font-size: 13px;">Evleri Gör<i class="fas fa-arrow-right"></i></span>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
+                        <a href="#" class="reklam1Bgp">
+                            <img class="reklam1Bgp" src="https://widgets.emlakjet.com/images/right-small-1.png" alt="" style="height:100%; width:100%;" />
+                            <!--div class="reklam1">
+                                <h3 style="position:absolute; bottom:170px;font-size: 19px; font-weight: 500; text-align: left;color: #263238;height:auto; width:150px;">Hayalinizdeki Müstakil Ev</h3>
+                                <p style="position:absolute;width: 160px;font-size: 16px; font-weight: 300;text-align: left; color: #64777d;bottom:80px;left:40px;">Bahçesinde keyif yapabileceğin müstakil ev seni bekliyor!</p>
+                                <span class="btn btn-danger" style="text-align: left; position: absolute; padding: 15px;bottom: 25px;left: 40px;font-size: 13px;">Evleri Gör<i class="fas fa-arrow-right"></i></span>
+                            </div>-->
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0">
+                        <a href="#" class="reklam1Bgp">
+                            <img src="https://widgets.emlakjet.com/images/right-small-2.png" class="reklam1Bgp" style="height:100%; width:100%;" />
+                            <div class="reklam1">
+                                <h3 style="position:absolute; bottom:170px;font-size: 19px; font-weight: 500; text-align: left;color: #263238;height:auto; width:200px;">Öğrencilere Üniversite Yakını Kiralıklar</h3>
+                                <p style="position:absolute;width: 160px;font-size: 16px; font-weight: 300;text-align: left; color: #64777d;bottom:80px;left:40px;">Okuldan başka bir şeyi dert etme, kafana göre evler burada!</p>
+                                <span class="btn btn-danger" style="text-align: left; position: absolute; padding: 15px;bottom: 25px;left: 40px;font-size: 13px;">Evleri Gör<i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -268,7 +331,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center" style="text-align:center;">
             <div class="col-xl-3 col-lg-3 col-md-5 col-sm-8 col-7  mt-3  justify-content-center pl-0 ">
-                <div class="card ilan"> 
+                <div class="card ilan">
                     <a href="#">
                         <img class="card-img-top cardPicture" src="Screenshot_3.png" alt="Card image cap">
                         <div class="card-body">
@@ -360,76 +423,77 @@
     <!--En Yeni İlanlar Hizalama yap-->
     <div class="container mt-5 enYeniIlanlar">
         <div class="row justify-content-center">
-            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-11 col-10 pl-0" style="position: relative;">  
-                <a href="#">    
-                    <img src="https://www.emlakjet.com/public/static/img/populersearch/istanbul.jpg" alt="alternate text"  />
-                    <p class="yeniIlanPic text-center" >İstanbul</p>
-                    <p class="yeniIlanBilgi text-center" >Satılık daire</p> 
-                    <p class="yeniIlanSayi text-center" >120 000'den Fazla İlan</p>    
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-11 col-10 pl-0" style="position: relative;">
+                <a href="#">
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/istanbul.jpg" alt="alternate text" />
+                    <p class="yeniIlanPic text-center">İstanbul</p>
+                    <p class="yeniIlanBilgi text-center">Satılık daire</p>
+                    <p class="yeniIlanSayi text-center">120 000'den Fazla İlan</p>
                 </a>++----
             </div>
-            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-11 col-10 mt-3 mt-md-0 mt-lg-0 mt-xl-0 pl-0"  style="position: relative;">
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-11 col-10 mt-3 mt-md-0 mt-lg-0 mt-xl-0 pl-0" style="position: relative;">
                 <a href="">
                     <img src="https://www.emlakjet.com/public/static/img/populersearch/aydin.jpg" alt="Alternate Text" />
-                         <div class="yeniIlanPic text-center">Aydın</div>
-                         <div class="yeniIlanBilgi text-center">Satılık daire</div>    
-                         <div class="yeniIlanSayi text-center">13 000'den Fazla İlan</div>
+                    <div class="yeniIlanPic text-center">Aydın</div>
+                    <div class="yeniIlanBilgi text-center">Satılık daire</div>
+                    <div class="yeniIlanSayi text-center">13 000'den Fazla İlan</div>
                 </a>
             </div>
-            <div class="col-xl-6 col-lg-10 col-md-12 col-sm-11 col-10  mt-xl-0  mt-3     pl-0"style="position: relative;" >
+            <div class="col-xl-6 col-lg-10 col-md-12 col-sm-11 col-10  mt-xl-0  mt-3     pl-0" style="position: relative;">
                 <a href="#">
-                    <img src="https://www.emlakjet.com/public/static/img/populersearch/antalya.jpg" alt="Alternate Text"  />
-                    <p class="yeniIlanPic  yeniIlanPic2 text-center"  >Antalya</p>
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/antalya.jpg" alt="Alternate Text" />
+                    <p class="yeniIlanPic  yeniIlanPic2 text-center">Antalya</p>
                     <p class="yeniIlanBilgi  yeniIlanBilgi2 text-center">Satılık daire</p>
-                    <p class="yeniIlanSayi yeniIlanSayi2 text-center" >11 000'den Fazla İlan</p>
+                    <p class="yeniIlanSayi yeniIlanSayi2 text-center">11 000'den Fazla İlan</p>
                 </a>
             </div>
         </div>
         <div class="row mt-3 justify-content-center">
             <div class="col-xl-6 col-lg-10 col-md-12 col-sm-11 col-10 pl-0" style="position: relative;">
                 <a href="#">
-                    <img src="https://www.emlakjet.com/public/static/img/populersearch/izmir.jpg" alt="Alternate Text"  />
-                    <p class="yeniIlanPic yeniIlanPic2 text-center"  >İzmir</p>
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/izmir.jpg" alt="Alternate Text" />
+                    <p class="yeniIlanPic yeniIlanPic2 text-center">İzmir</p>
                     <p class="yeniIlanBilgi yeniIlanBilgi2 text-center">Satılık daire</p>
-                    <p class="yeniIlanSayi yeniIlanSayi2  text-center" >10 000'den Fazla İlan</p>
+                    <p class="yeniIlanSayi yeniIlanSayi2  text-center">10 000'den Fazla İlan</p>
                 </a>
             </div>
             <div class="col-xl-3 col-lg-5 col-md-6 col-sm-11 col-10 mt-3 mt-xl-0 pl-0" style="position: relative;">
                 <a href="#">
-                    <img src="https://www.emlakjet.com/public/static/img/populersearch/06ankara.jpg" style="opacity:1;" alt="Alternate Text"  />
-                    <p class="yeniIlanPic text-center"  >Ankara</p>
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/06ankara.jpg" style="opacity:1;" alt="Alternate Text" />
+                    <p class="yeniIlanPic text-center">Ankara</p>
                     <p class="yeniIlanBilgi text-center">Satılık daire</p>
-                    <p class="yeniIlanSayi text-center" >10 000'den Fazla İlan</p>
+                    <p class="yeniIlanSayi text-center">10 000'den Fazla İlan</p>
                 </a>
             </div>
             <div class="col-xl-3 col-lg-5 col-md-6 col-sm-11 col-10 mt-3  m mt-xl-0 pl-0" style="position: relative;">
                 <a href="#">
-                    <img src="https://www.emlakjet.com/public/static/img/populersearch/mersin.jpg" alt="Alternate Text"  />
-                    <p class="yeniIlanPic text-center"  >Mersin</p>
+                    <img src="https://www.emlakjet.com/public/static/img/populersearch/mersin.jpg" alt="Alternate Text" />
+                    <p class="yeniIlanPic text-center">Mersin</p>
                     <p class="yeniIlanBilgi text-center">Satılık daire</p>
-                    <p class="yeniIlanSayi text-center" >4 000'den Fazla İlan</p>
+                    <p class="yeniIlanSayi text-center">4 000'den Fazla İlan</p>
                 </a>
             </div>
         </div>
     </div>
 
-    <!--Slogan1-->
-        <div class="container mt-5 slogan">
-            <div class="row ml-0 mr-0 justify-content-center" style="background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png); background-position:top left; background-repeat:no-repeat; border:1px rgba(183,179,179,0.3) solid;">
-                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pl-0 mr-md-4 mr-lg-0 pr-lg-0 ">
-                    <img src="house.png" class="sloganPic" alt="" />
-                </div>
-                <div class="col-lg-6 col-md-8 col-sm-7 col-7 my-4 pr-0 pt-2 pl-0 text-center">
-                    <h2>
-                       Hemen üye ol,
-                        senin de ilanların anasayfada yayınlansın.
-                    </h2>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-3 my-4 my-md-3 pl-0 pl-lg-3 pr-md-0 pt-lg-0 pt-xl-0">
-                    <button type="button" data-toggle="modal" data-target="#kayitOl" class="btn btn-danger p-3 sloganBtn">Ücretsiz İlan Ver</button>
-                </div>
+    <!--slogan-->
+    <div class="container mt-5" style="background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png); background-position:top left; background-repeat:no-repeat; border:1px rgba(183,179,179,0.3) solid;">
+        <div class="d-flex justify-content-center slogan">
+            <div>
+                <img src="house.png" class="sloganPic ml-3 ml-sm-5 " alt="" />
+            </div>
+            <div>
+                <h2 class="mt-xl-4 mt-lg-4 mt-md-3 mt-sm-3   mr-3 ml-3  mt-2 text-center">
+                    Hemen üye ol,
+                    senin de ilanların anasayfada yayınlansın.
+                </h2>
+            </div>
+            <div>
+                <button type="button" data-toggle="modal" data-target="#kayitOl" class="btn btn-danger p-3 sloganBtn mt-xl-3 mt-lg-3 mt-md-3 mt-sm-3 mt-3 mr-3 mr-sm-5">Ücretsiz İlan Ver</button>
             </div>
         </div>
+    </div>
+
 
 
     <h1 style="text-align:center; color:black;">Öne Çıkan Projeler</h1>
@@ -499,22 +563,26 @@
         </div>
     </div>
 
-    <!--Bilgi Al-->
-    <div class="container mt-5 slogan">
-        <div class="row ml-0 mr-0 justify-content-center" style="background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png); background-position:top left; background-repeat:no-repeat; border:1px rgba(183,179,179,0.3) solid; background-size:auto;">
-            <div class="col-lg-1 col-md-1 col-sm-2 col-2 pl-0 pl-sm-4  pl-md-4  mr-md-4 mr-lg-0 pr-lg-0 ">
-                <img src="house.png" class="sloganPic" alt="" />
+    <!--slogan-->
+    <div class="container mt-5" style="background-image:url(https://s-emlakjet.mncdn.com/static/img/left-house.png); background-position:top left; background-repeat:no-repeat; border:1px rgba(183,179,179,0.3) solid;">
+        <div class="d-flex justify-content-center slogan">
+            <div>
+                <img src="house.png" class="sloganPic ml-3 ml-sm-5 " alt="" />
             </div>
-            <div class="col-lg-6 col-md-8 col-sm-7 col-7 my-4  pr-0 pt-2 pl-0 text-center">
-                <h2>
-                    Baki Emlak,kazanan emlak ofislerinden olmak ister misiniz?
+            <div>
+                <h2 class="mt-xl-4 mt-lg-4 mt-md-3 mt-sm-3   mr-3 ml-3  mt-2 text-center">
+                    Hemen üye ol,
+                    senin de ilanların anasayfada yayınlansın.
                 </h2>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-3 my-4 my-md-3 pl-0 pl-lg-3 pr-md-0 pt-lg-0 pt-xl-0">
-                <button type="button" data-toggle="modal" data-target="#kayitOl" class="btn btn-success p-3 sloganBtn">Detaylı Bilgi Alın</button>
+            <div>
+                <button type="button" data-toggle="modal" data-target="#kayitOl" class="btn btn-danger p-3 sloganBtn mt-xl-3 mt-lg-3 mt-md-3 mt-sm-3 mt-3 mr-3 mr-sm-5">Ücretsiz İlan Ver</button>
             </div>
         </div>
     </div>
+
+
+
 
     <!--Öne Çıkan İlanlar Part2-->
     <div class="container mt-5">
@@ -637,9 +705,9 @@
                     </div>
                     <!--<hr />-->
                     <div class="<!--row-->" style="color:green;">
-                        
-                    </div> 
+
                     </div>
+                </div>
                 <div class="container" style="border:1px solid; background: white; font-size:15px;">
                     <div class="row text-center " id="info1">
                         <div class="col-md-12">
@@ -785,7 +853,7 @@
         </div>
     </div>
 
-    <button id="tikla">Baki</button>    
+    <button id="tikla">Baki</button>
 
     <script>
         $(document).ready(function () {
@@ -834,11 +902,11 @@
 
 
             $('#modalLRInput14,#modalLRInput13').keyup(function () {
-                
-                if ($('#modalLRInput13').val() == "" && $('#modalLRInput14').val()=="") {
+
+                if ($('#modalLRInput13').val() == "" && $('#modalLRInput14').val() == "") {
                     $('#sifreEslestirme').css("visibility", "hidden");
                 }
-                
+
                 else if ($('#modalLRInput14').val() != $('#modalLRInput13').val()) {
                     $('#sifreEslestirme').css("visibility", "visible");
                     $('#sifreEslestirme').text("Şifreler eşleşmemektedir.");
@@ -869,12 +937,12 @@
 
             //    }
             //})
-        })  
+        })
 
     </script>
 
-   
-   
+
+
 
 
 

@@ -60,7 +60,6 @@ h1 {
 
     .raporİcerik h4 {
         color: black;
-        font-size:25px;
     }
 
 .raporPic {
@@ -94,6 +93,10 @@ h1 {
 }
 
 .reklam3 img:hover {
+    box-shadow: 0px 5px 20px 5px gray;
+}
+
+.reklam4 img:hover {
     box-shadow: 0px 5px 20px 5px gray;
 }
 

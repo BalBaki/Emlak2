@@ -407,6 +407,15 @@ h1 {
     top:59%;
 }
 
+.searchText {
+    margin-left: 10px !important;
+    font-size: 15px !important;
+    width: 700px !important;
+}
+
+#searchAtMapButton {
+    font-size: 15px;
+}
 /*RESPONSIVE MEDIA*/
 /*0-sm*/
 @media only screen and (max-width:576px) {
@@ -494,6 +503,15 @@ h1 {
         top: 63%;
         left: 10%;
     }
+
+    .searchText {
+        width: 210px !important;
+    }
+
+    #searchAtMapButton {
+        padding-left:136px;
+        padding-right:136px;
+    }
    
 }
 
@@ -572,6 +590,14 @@ h1 {
         top: 63%;
         left: 10%;
     }
+    .searchText {
+        width: 288px !important;
+    }
+    
+    #searchAtMapButton{
+        padding-left:175px;
+        padding-right:174px;
+    }
 }
 
 /*md-lg*/
@@ -626,7 +652,9 @@ h1 {
         font-size: 16px;
         left: 10%;
     }
-   
+    .searchText {
+        width: 368px !important;
+    }
     
 }
 
@@ -669,6 +697,9 @@ h1 {
     }
     .reklam4 span {
         font-size: 11px;
+    }
+    .searchText{
+        width:605px !important;
     }
 
 }

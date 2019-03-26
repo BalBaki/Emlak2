@@ -23,7 +23,7 @@
 <body>
 
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow" style="font-size:15px;">
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light menuAlwaysShow" style="font-size:15px;">
         <img src="house.png" alt="..." class="menuPicture">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
         <form class="form-inline my-2 my-lg-0">
             <!--<input class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit" >Ara</button>-->
-            <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-right:20px;">
+    <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-right:20px;">
             <li>
                 <button type="button"  class="btn  btn-lg btn-block">Karsilastir</button>
             </li>
@@ -85,7 +85,7 @@
             </li>
             <li>
                 <button type="button"  class="btn btn-danger btn-lg btn-block">Ücretsiz İlan</button>
-            </li>-->
+            </li>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true" style="padding-left:515px;"></span>Karşılaştır</a>
@@ -98,32 +98,32 @@
                 </li>
             </ul>
         </form>
-    </nav>
-
+    </nav>-->
 
 
     <!--ilan-->
-    <div class="container text-center ">
-        <div class="row" style="border: 1px solid white; height:100%;width:100%; background:#79B7DC;color:white;">
-            <div class="col-md-6 fa-2x text-center" style="font-weight:bold; border-right: 1px solid white;">
+    <div class="container pl-5 pr-5 pl-sm-4 pr-md-4">
+        <div class="row justify-content-center" style="border: 1px solid white; background:#79B7DC;color:white;">
+            <div class="col-md-6 fa-2x text-center border-right" style="font-weight:bold;">
                 Çubukluda Boğaza Karşı Kiralık İş Yeri
             </div>
-            <div class="col-md-4" style="border-right: 1px solid white;">
+            <div class="col-md-4 border-right">
                 <div class="my-2 text-center">
                     <i class="fas fa-couch fa-2x" style="margin-right:4%;"> 2+1 </i>
                     <i class="fas fa-square fa-2x" style="margin-right:4%;"> 105 m2</i>
-                    <i class="fas fa-layer-group fa-2x"> 2. Kat</i>
+                    <i class="fas fa-layer-group fa-2x mt-md-3 mt-lg-0"> 2. Kat</i>
                 </div>
             </div>
             <div class="col-md-2 fa-2x text-center mr-0">199 000 TL</div>
         </div>
     </div>
 
-    <div class="container ">
-        <div class="row mt-5">
-            <div class="col-md-8 pl-0">
+
+    <div class="container mt-4">
+        <div class="row ">
+            <div class="col-md-8 pl-sm-0 ">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner border">
                         <div class="carousel-item active">
                             <img src="eylemce_masal_ev_173.png" class="d-block ilanDetayPic">
                         </div>
@@ -143,13 +143,14 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div class="container mt-5" id="cardAltMenu" style="bottom:0;">
-                    <div class="row text-center border ">
+                <div class="container mt-3 mt-md-5" id="cardAltMenu" style="bottom:0;">
+                    <div class="row text-center border mt-2">
                         <div class="col-md-6 border p-0 ">
                             <h2><a class="nav-link active" href="#"><i class="fas fa-map-marker-alt"></i> Yakındaki İlanlar</a></h2>
                         </div>
                         <div class="col-md-6 border p-0  ">
-                            <h2><a class="nav-link active" href="#"><i class="fas fa-list-ul"></i> Emlakçının Tüm İlanları</a>
+                            <h2>
+                                <a class="nav-link active" href="#"><i class="fas fa-list-ul"></i> Emlakçının Tüm İlanları</a>
                             </h2>
                         </div>
                         <div class="col-md-6 border p-0  ">
@@ -162,24 +163,51 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center pl-0 pr-0 pt-4 pb-0" style="border: 1px solid white;">
-                <img src="https://img-emlakjet.mncdn.com/mnresize/400/300/p/2018/06/21/1/d/9db1fe6948ebdc4b9d989aef50c9e6da.jpg" style="height:20%; width:auto;" />
-                <p class="mt-1" style="color:black;font-size:20px; border-bottom:1px solid white; padding-bottom:5px;">Baki BAL ltd</p>
-                <p style="font-size:25px;  border-bottom:1px solid white; padding-bottom:5px;">İlan No: <span style="font-weight:bold;  ">5646546456465</span></p>
-                <span style="font-size:28px; display:block;"><i class="far fa-user" style="color:#D0D8DF;"></i> Baki BAL</span>
-                <div style="margin-top:5%; margin-bottom:5%; font-size:25px;  border-bottom:1px solid white; padding-bottom:5px;">
-                    <a href="#" style="text-decoration:none;">
-                        <i class="fas fa-mobile-alt" style="color:#D0D8DF;"></i>
-                    </a>
-                    <span type="button" id="telefon" class="btn btn-success" style="padding:5px 20px 5px 20px; font-size:28px; width:100%; height:100%; ">Telefona Bak</span>
+            <div class="col-md-4 text-center mt-3 mt-md-0" style="border: 1px solid white;">
+                <div class="row ">
+                    <div class="col-md-12 p-0 border-bottom">
+                        <img src="https://img-emlakjet.mncdn.com/mnresize/400/300/p/2018/06/21/1/d/9db1fe6948ebdc4b9d989aef50c9e6da.jpg" style="max-width:100%;" />
+                    </div>
                 </div>
-                <div style="border-bottom:1px solid white; padding-bottom:5px;">
-                    <span class=" btn-light fa-2x" id="telefon" style="color:green; border:green; margin-top:5%; margin-bottom:5%;">Bu Emlakçının Diğer İlanları <i class="fas fa-arrow-right"></i></span>
+                <div class="row">
+                    <div class="col-md-12 p-0 border-bottom">
+                        <p class="  pt-2 pb-2 mb-0" style="color:black;font-size:20px;">Baki BAL ltd</p>
+                    </div>
                 </div>
-                <div style="height:auto; width:100%; text-align:center">
-                    <img src="http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Google-Maps-icon.png" alt="" style="height:100%; width:auto;" data-toggle="modal" data-target="#mapModal" />
+                <div class="row">
+                    <div class="col-md-12 p-0 border-bottom">
+                        <p class=" pt-2 mb-0 pb-2" style="font-size:25px;">İlan No: <span class="pt-0" style="font-weight:bold;  ">5646546456465</span></p>
+                    </div>
                 </div>
-            </div>  
+                <div class="row">
+                    <div class="col-md-12 p-0  border-bottom">
+                        <span class="pt-2  pb-2" style="font-size:28px; display:block;"><i class="far fa-user" style="color:#D0D8DF;"></i> Baki BAL</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 p-0 border-bottom">
+                        <a href="#" style="text-decoration:none;">
+                            <i class="fas fa-mobile-alt fa-3x pt-2  pb-2" style="color:#D0D8DF;"></i>
+                        </a>
+                        <span type="button" id="telefon" class="btn btn-success " style="padding:5px 20px 5px 20px; font-size:28px; width:100%; ">Telefona Bak</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 p-0 border-bottom">
+                        <a href="#" class="mt-2 mb-2" style="font-size:22px; color:black; background-color:white;">Bu Emlakçının Diğer İlanları <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 p-0 border-bottom">
+                        <img src="http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Google-Maps-icon.png" alt="" style="max-width:100%;" data-toggle="modal" data-target="#mapModal" />
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
         </div>
     </div>
 
@@ -187,7 +215,7 @@
     <!--Orta Menu-->
 
 
-   
+
 
     <div class="container fa-2x  mt-5 border">
         <div class="row ">
@@ -210,8 +238,7 @@
             </div>
         </div>
         <div class="row  mt-3">
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
+            <div class="col-md-6 justify-content-center">
                 <div class="ilanKunyeDiv">
                     <span class="ilanKunyeSpanLeft">İlan Güncellenme Tarihi</span>
                     <span class="ilanKunyeSpanRight">14.02.2019</span>
@@ -231,7 +258,7 @@
             </div>
 
 
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="ilanKunyeDiv">
                     <span class="ilanKunyeSpanLeft">İlan Güncellenme Tarihi</span>
                     <span class="ilanKunyeSpanRight">14.02.2019</span>
@@ -249,120 +276,119 @@
                     <span class="ilanKunyeSpanRight">Satılık</span>
                 </div>
             </div>
-            <div class="col-md-1"></div>
         </div>
 
-</div>
-        <!--Footer-->
-        <div class="altMenu">
-            <div class="iletisim">
+    </div>
+    <!--Footer-->
+    <div class="altMenu">
+        <div class="iletisim">
 
-            </div>
-            <div class="baglanti">
-                <div>Bizi sosyal medya hesaplarımızdan takip edin.</div>
-                <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-            <div class="rules">
-                <ul>
-                    <li><a href="#" data-toggle="modal" data-target="#kurallar">İlan Yayınlama Kuralları</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#kurallar">Kullanım Koşulları</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#kurallar">Üyelik Sözleşmesi ve Gizlilik Politikası</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#kurallar">İşlem Rehberi</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#kurallar">Çerez Politikası</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#kurallar">Kişisel Verilerin Korunması Hakkında</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <label>
-                    Baki.com © 2019 Baki.com sitesinde kullanıcılar tarafından sağlanan her türlü ilan, bilgi, içerik ve görselin gerçekliği, orijinalliği, güvenilirliği ve doğruluğuna
-                    ilişkin sorumluluk bu içerikleri giren kullanıcıya ait olup, emlakjet.com'un bu hususlarla ilgili herhangi bir sorumluluğu bulunmamaktadır.
-                </label>
-                <img src="https://banner2.kisspng.com/20180613/zfv/kisspng-computer-icons-letter-b-clip-art-5b21110c32d7f2.9384524815288937082083.jpg" alt="" />
-            </div>
         </div>
+        <div class="baglanti">
+            <div>Bizi sosyal medya hesaplarımızdan takip edin.</div>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="rules">
+            <ul>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">İlan Yayınlama Kuralları</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Kullanım Koşulları</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Üyelik Sözleşmesi ve Gizlilik Politikası</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">İşlem Rehberi</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Çerez Politikası</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#kurallar">Kişisel Verilerin Korunması Hakkında</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <label>
+                Baki.com © 2019 Baki.com sitesinde kullanıcılar tarafından sağlanan her türlü ilan, bilgi, içerik ve görselin gerçekliği, orijinalliği, güvenilirliği ve doğruluğuna
+                ilişkin sorumluluk bu içerikleri giren kullanıcıya ait olup, emlakjet.com'un bu hususlarla ilgili herhangi bir sorumluluğu bulunmamaktadır.
+            </label>
+            <img src="https://banner2.kisspng.com/20180613/zfv/kisspng-computer-icons-letter-b-clip-art-5b21110c32d7f2.9384524815288937082083.jpg" alt="" />
+        </div>
+    </div>
 
 
-        <!-- Modal - Rules -->
-        <div class="modal fade" id="kurallar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog text-center" role="document">
-                <div class="modal-content" style="background:none !important;">
-                    <div class="container" style="border:1px solid; background: white;">
-                        <div class="row" style="color:green; font-size:15px;">
-                            <div class="col-md-2 h-100"><a href="#" id="rule1">Kullanım Koşulları</a></div>
-                            <div class="col-md-2 h-100"><a href="#" id="rule2">Üyelik Sözleşmesi ve Gizlilik Politikası</a></div>
-                            <div class="col-md-2 h-100"><a href="#" id="rule3">İşlem Rehberi</a></div>
-                            <div class="col-md-2"><a href="#" id="rule4">Çerez Politikası</a></div>
-                            <div class="col-md-2 "><a href="#" id="rule5">Kişisel Verilerin Korunması Hakkında</a></div>
-                            <div class="col-md-2 "><a href="#" id="rule6">İlan Yayınlama Kuralları  </a></div>
+    <!-- Modal - Rules -->
+    <div class="modal fade" id="kurallar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog text-center" role="document">
+            <div class="modal-content" style="background:none !important;">
+                <div class="container" style="border:1px solid; background: white;">
+                    <div class="row" style="color:green; font-size:15px;">
+                        <div class="col-md-2 h-100"><a href="#" id="rule1">Kullanım Koşulları</a></div>
+                        <div class="col-md-2 h-100"><a href="#" id="rule2">Üyelik Sözleşmesi ve Gizlilik Politikası</a></div>
+                        <div class="col-md-2 h-100"><a href="#" id="rule3">İşlem Rehberi</a></div>
+                        <div class="col-md-2"><a href="#" id="rule4">Çerez Politikası</a></div>
+                        <div class="col-md-2 "><a href="#" id="rule5">Kişisel Verilerin Korunması Hakkında</a></div>
+                        <div class="col-md-2 "><a href="#" id="rule6">İlan Yayınlama Kuralları  </a></div>
 
-                        </div>
-                        <!--<hr />-->
-                        <div class="<!--row-->" style="color:green;">
-
-                        </div>
                     </div>
-                    <div class="container" style="border:1px solid; background: white; font-size:15px;">
-                        <div class="row text-center " id="info1">
-                            <div class="col-md-12">
-                                1
-                            </div>
-                        </div>
-                        <div class="row text-center" id="info2">
-                            <div class="col-md-12">
-                                2
-                            </div>
-                        </div>
-                        <div class="row text-center" id="info3">
-                            <div class="col-md-12">
-                                3
-                            </div>
-                        </div>
-                        <div class="row text-center" id="info4">
-                            <div class="col-md-12">
-                                4
-                            </div>
-                        </div>
-                        <div class="row text-center" id="info5">
-                            <div class="col-md-12">
-                                5
-                            </div>
-                        </div>
-                        <div class="row text-center" id="info6">
-                            <div class="col-md-12">
-                                6
-                            </div>
-                        </div>
+                    <!--<hr />-->
+                    <div class="<!--row-->" style="color:green;">
 
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-
-        <!--Modal Map-->
-
-        <div class="modal" tabindex="-1" role="dialog" id="mapModal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                <div class="container" style="border:1px solid; background: white; font-size:15px;">
+                    <div class="row text-center " id="info1">
+                        <div class="col-md-12">
+                            1
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.689859294481!2d29.083488915340038!3d41.14129591917778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacad0b6d41001%3A0x3e218b8b8ed55804!2zQmV5a296IMOHYXnEsXLEsSwgQmV5a296L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1550213962230" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="row text-center" id="info2">
+                        <div class="col-md-12">
+                            2
+                        </div>
                     </div>
+                    <div class="row text-center" id="info3">
+                        <div class="col-md-12">
+                            3
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info4">
+                        <div class="col-md-12">
+                            4
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info5">
+                        <div class="col-md-12">
+                            5
+                        </div>
+                    </div>
+                    <div class="row text-center" id="info6">
+                        <div class="col-md-12">
+                            6
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
 
 
-        <script>
+    <!--Modal Map-->
+
+    <div class="modal" tabindex="-1" role="dialog" id="mapModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.689859294481!2d29.083488915340038!3d41.14129591917778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacad0b6d41001%3A0x3e218b8b8ed55804!2zQmV5a296IMOHYXnEsXLEsSwgQmV5a296L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1550213962230" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
 
         $(document).ready(function () {
             $('#info1,#info2,#info3,#info4,#info5,#info6').addClass("gosterme");
@@ -412,7 +438,7 @@
             })
 
         })
-        </script>
+    </script>
 
 
 </body>

@@ -146,7 +146,13 @@ h1 {
     background-image: url(https://s-emlakjet.mncdn.com/static/img/left-house.png),url(https://s-emlakjet.mncdn.com/static/img/right-house.png);
     background-repeat: no-repeat;
     background-position: top left,top right;
+  
 }
+
+    .baglanti div {
+        font-size: 15px !important;
+        font-weight:bold;
+    }
 
 .rules ul {
     list-style-type: none;
